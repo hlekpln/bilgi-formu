@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="bootstrap.css" />
+
+    <style></style>
+    <title>JS Ödev-12</title>
+  </head>
+  <body style="background-image: url(background-texture.png);">
+    <div class="container text-center mt-5">
+      <div class="card   mx-auto w-50">
+        <div class="text-center"><h3>Kişisel Bilgiler Formu</h3></div>
+        <form>
+          <div class="form-group row">
+            <label for="ad" class="col-sm-2 col-form-label">AD</label>
+            <div class="col-sm-10">
+              <input
+                type="text "
+                name="İSMİNİZ"
+                id="ad"
+                class="form-control"
+                placeholder="İsminizi giriniz"
+              />
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="soyad" class="col-sm-2 col-form-label">SOYAD</label>
+            <div class="col-sm-10">
+              <input
+                type="text "
+                name="soyad"
+                id="soyad"
+                class="form-control"
+                placeholder="Soyadınızı giriniz"
+              />
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="yas" class="col-sm-2 col-form-label">YAŞ</label>
+            <div class="col-sm-10">
+              <input
+                type="text "
+                name="yas"
+                id="yas"
+                class="form-control"
+                placeholder="Yaşınızı giriniz"
+              />
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="adres" class="col-sm-2 col-form-label">ADRES</label>
+            <div class="col-sm-10">
+              <input
+                type="text "
+                name="adres"
+                id="adres"
+                class="form-control"
+                placeholder="Adres bilgilerinizi giriniz"
+              />
+            </div>
+          </div>
+          <input
+            type="button"
+            id="ekle"
+            value="EKLE"
+            class="btn btn-danger btn-lg mb-2"
+            onclick="adddata()"
+          />
+          <input
+            type="button"
+            id="temizle"
+            value="RESET"
+            class="btn btn-danger btn-lg mb-2"
+          />
+        </form>
+      </div>
+      <div class="card  mt-3">
+        <table id="tablo" class="table table-bordered border-danger">
+          <thead>
+            <h3>Kişisel Bilgiler Tablosu</h3>
+          </thead>
+          <tbody>
+            <tr>
+              <th style="width: 20%">AD</th>
+              <th style="width: 20%">SOYAD</th>
+              <th style="width: 10%">YAŞ</th>
+              <th style="width: 50%">ADRES</th>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- script -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="odev12.js"></script>
+  </body>
+</html>
